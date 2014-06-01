@@ -1,1 +1,183 @@
-My GitHub Page
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Адаптивная сетка eBS</title>
+  <meta name="viewport" content="initial-scale=1.0">
+<style type="text/css">
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    font-family: "Univers LT Std", Univers, "Helvetica Neue", Arial, sans-serif;
+    font-weight: lighter;
+  }
+
+  div { -moz-box-sizing: border-box; box-sizing: border-box; }
+
+  .clfx { *zoom: 1; }
+  .clfx:before,
+  .clfx:after { display: table; line-height: 0; content: " "; }
+  .clfx:after { clear: both; }
+
+  .header, .toolbar { height: 70px; }
+
+  .header {
+    padding-top: 12px;
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow:         0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(/logo@2x.png);
+    background-size: 117px 47px;
+    width: 117px;
+    height: 47px;
+  }
+
+  .layout {
+    ~width: 888px;
+    margin: 0 auto;
+    ~background-color: lightyellow;
+  }
+
+  .blocks-container {
+    margin: -6px;
+  }
+
+  .block,
+  .block-on-block {
+    float: left;
+    margin: 6px;
+  }
+
+  .block {
+    padding: 12px;
+    background-color: white;
+    color: #bfb8af;
+    font-size: 2em;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    box-shadow:         0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in;
+  }
+
+  .block:hover {
+    background-color: #3d3935;
+    color: #f0efec;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(132, 189, 0, 0.6);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(132, 189, 0, 0.6);
+    box-shadow:         0px 0px 15px 0px rgba(132, 189, 0, 0.6);
+    transition-delay: .3s !important;
+    cursor: pointer;
+  }
+
+  .block-size-x1 {
+    width: 288px;
+    height: 264px;
+  }
+  .block-size-x2 {
+    width: 588px;
+    height: 540px;
+  }
+
+  .block-on-block { width: 288px; }
+  .block-on-block .block {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .block-on-block :first-child {
+    margin-bottom: 12px;
+  }
+
+  /* IPHONE PORTRAIT & LANDSCAPE & MICRO DESKTOP */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-width: 320px) and (max-width: 627px) {
+    .layout { width: 100%; }
+    .logo { display: block; margin: 0 auto; }
+    .blocks-container { margin: 0; }
+    .block, .block-on-block {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 12px;
+    }
+    .block-size-x2 {
+      width: 288px;
+      height: 264px;
+    }
+  }
+
+  /* IPAD SMALL DESKTOP */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-width: 628px) and (max-width: 907px) {
+    .layout { width: 588px; }
+    .logo { display: block; margin: 0 auto; }
+  }
+
+  /* MIDDLE DESKTOP */
+  @media only screen and (min-width: 908px) and (max-width: 1227px) {
+    .layout { width: 888px; }
+  }
+
+  /* LARGE DESKTOP */
+  @media only screen and (min-width: 1228px) {
+    .layout { width: 1188px; }
+  }
+
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="header">
+      <div class="layout">
+        <div class="logo"></div>
+      </div>
+    </div>
+    <div class="toolbar"></div>
+    <div class="layout">
+      <div class="blocks-container clfx">
+        <div class="block block-size-x2">1</div>
+        <div class="block-on-block">
+          <div class="block block-size-x1">2</div>
+          <div class="block block-size-x1">3</div>
+        </div>
+        <div class="block-on-block">
+          <div class="block block-size-x1">4</div>
+          <div class="block block-size-x1">5</div>
+        </div>
+        <div class="block block-size-x2">6</div>
+        <div class="block block-size-x2">7</div>
+        <div class="block-on-block">
+          <div class="block block-size-x1">8</div>
+          <div class="block block-size-x1">9</div>
+        </div>
+        <div class="block-on-block">
+          <div class="block block-size-x1">10</div>
+          <div class="block block-size-x1">11</div>
+        </div>
+        <div class="block block-size-x2">12</div>
+        <div class="block block-size-x2">13</div>
+        <div class="block-on-block">
+          <div class="block block-size-x1">14</div>
+          <div class="block block-size-x1">15</div>
+        </div>
+        <div class="block-on-block">
+          <div class="block block-size-x1">16</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+(function() {
+  "use strict"
+}).call(this);
+</script>
+</body>
+</html>
