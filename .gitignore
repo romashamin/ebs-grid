@@ -1,0 +1,11 @@
+/log/*.log
+/tmp
+
+database.yml
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+.sass-cache
